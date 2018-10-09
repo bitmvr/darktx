@@ -2,13 +2,13 @@
 
 
 darktx::macos_on(){
-	networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" on
-	networksetup -setnetworkserviceenabled "Wi-Fi" on
+	sudo networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" on
+	sudo networksetup -setnetworkserviceenabled "Wi-Fi" on
 }
 
 darktx::macos_off(){
-	networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" off
-	networksetup -setnetworkserviceenabled "Wi-Fi" off
+	sudo networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" off
+	sudo networksetup -setnetworkserviceenabled "Wi-Fi" off
 }
 
 
@@ -36,10 +36,10 @@ fi
 
 case "$switch" in
 	-o|--on)
-		sudo darktx::macos_on
+		darktx::macos_on
 	;;
 	-x|--off)
-		sudo darktx::macos_off
+		darktx::macos_off
 	;;
 	-h|--help)
 		darktx::usage

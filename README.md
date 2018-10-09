@@ -1,5 +1,4 @@
-# Mac-OS Network Information
-
+# darktx
 
 ## Usage
 
@@ -35,4 +34,3 @@ sudo networksetup -setnetworkserviceenabled "Wi-Fi" off
 
 ```
 
-# darktx

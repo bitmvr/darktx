@@ -16,7 +16,7 @@ darktx::usage(){
 	echo ''
 	echo "$(basename "$0") - Kill your transmissions quickly"
 	echo ''
-	echo "Usage: $(basename "$0") [OPTION]"
+	echo "Usage: $(basename "$0") [ OPTION ]"
 	echo ''
 	echo ' OPTIONS:'
 	echo ''

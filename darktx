@@ -46,8 +46,8 @@ case "$switch" in
 	;;
 	*)
 		echo ''
-    	echo 'ERROR: Invalid argument passed. Please use --help to view usage.'
-    	echo ''
+		echo 'ERROR: Invalid argument passed. Please use --help to view usage.'
+		echo ''
 		exit 1
 	;;
 esac

@@ -26,11 +26,16 @@ Usage: darktx [OPTION]
 
 networksetup -listallnetworkservices
 
+
 # Switch Apple USB Ethernet Adapter On/Off
+
 networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" on | off
 
+
 # Switch Wi-fi On/Off
+
 sudo networksetup -setnetworkserviceenabled "Wi-Fi" off
+
 
 ```
 

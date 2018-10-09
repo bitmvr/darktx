@@ -13,7 +13,7 @@ Usage: darktx [OPTION]
  OPTIONS:
 
   -o | --on      Turn on all network services
-  -d | --off     Turn off all network services
+  -x | --off     Turn off all network services
   -h | --help    Displays this information
 
 ```

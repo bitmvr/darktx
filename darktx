@@ -21,7 +21,7 @@ darktx::usage(){
 	echo ' OPTIONS:'
 	echo ''
 	echo '  -o | --on      Turn on all network services'
-	echo '  -d | --off     Turn off all network services'
+	echo '  -x | --off     Turn off all network services'
 	echo '  -h | --help    Displays this information'
 	echo ''
 }
@@ -38,7 +38,7 @@ case "$switch" in
 	-o|--on)
 		darktx::macos_on
 	;;
-	-d|--off)
+	-x|--off)
 		darktx::macos_off
 	;;
 	-h|--help)

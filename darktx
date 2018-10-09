@@ -36,10 +36,10 @@ fi
 
 case "$switch" in
 	-o|--on)
-		darktx::macos_on
+		sudo darktx::macos_on
 	;;
 	-x|--off)
-		darktx::macos_off
+		sudo darktx::macos_off
 	;;
 	-h|--help)
 		darktx::usage

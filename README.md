@@ -1,5 +1,7 @@
 # darktx
 
+Current support is only for MacOS. Future versions will allow one to go dark on MacOS, Windows, and Linux.
+
 ## Usage
 
 ```

@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+
+darktx::macos_on(){
+	networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" on
+	networksetup -setnetworkserviceenabled "Wi-Fi" on
+}
+
+darktx::macos_off(){
+	networksetup -setnetworkserviceenabled "Apple USB Ethernet Adapter" off
+	networksetup -setnetworkserviceenabled "Wi-Fi" off
+}
+
+
+darktx::usage(){
+	echo ''
+	echo "$(basename "$0") - Kill your transmissions quickly"
+	echo ''
+	echo "Usage: $(basename "$0") [OPTION]"
+	echo ''
+	echo ' OPTIONS:'
+	echo ''
+	echo '  -o | --on      Turn on all network services'
+	echo '  -d | --off     Turn off all network services'
+	echo '  -h | --help    Displays this information'
+	echo ''
+}
+
+switch="$1"
+
+# Check for zero or empty string arguments
+if [ -z "$switch" ]; then
+	darktx::usage
+	exit 1
+fi
+
+case "$switch" in
+	-o|--on)
+		darktx::macos_on
+	;;
+	-d|--off)
+		darktx::macos_off
+	;;
+	-h|--help)
+		darktx::usage
+	;;
+	*)
+		echo ''
+    	echo 'ERROR: Invalid argument passed. Please use --help to view usage.'
+    	echo ''
+		exit 1
+	;;
+esac
+
+
+
